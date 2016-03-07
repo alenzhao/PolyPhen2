@@ -478,10 +478,14 @@ by the recurrence risk ratio. It is defined as a probability ratio which compare
 the probability of a study subject being affected given that a relative is affected to
 the general risk in the population. The general risk in the population is commonly
 referred to as the population prevalence of the disease, and denoted by K. For the
-relative of an affected individual, the recurrence risk ratio is thus:
+relative of an affected individual, the recurrence risk ratio is thus: \\
 
-$\lambda_R = P(Y_2 = 1 | Y_1 = 1) / K
-$
+	$
+		\lambda_R = \frac{P(Y_2=1 | Y_1 = 1)}{K} 
+	$
+
+
+
 
 \vspace{1pc}
 $\bullet$ prevalence:
@@ -491,24 +495,30 @@ The total number of cases of a given disease in a specified population at a desi
 \vspace{1pc}
 $\bullet$ attributable fraction:
 The attributable fraction assesses the genetic effect relative to the
-disease prevalence and is defined by
+disease prevalence and is defined by \\
 
-  $ AF = (K - f_0) / K=1-P(Y = 1 | no risk alleles)/P(Y=1)
+
+  $ 
+	  AF = \frac{K - f_0 }{K} = 1 - \frac{P(Y = 1 | no- risk- alleles)}{P(Y=1)} 
   $
 
 
 \vspace{1pc}
 $\bullet$ narrow-sense heritability:
-the narrow sense heritability ( $h^2 $) is defined as the proportion of the phenotypic variance that is explained by just the additive genetic effects,
+the narrow sense heritability ( $h^2 $) is defined as the proportion of the phenotypic variance that is explained by just the additive genetic effects, \\
 
-	$ h^2 = V_A / Var(Y)
+	$ 
+		h^2 = V_A / Var(Y) = \frac{V_A}{Var(Y)} 
 	$ \\
+	
 	The advantage of the narrow sense heritability is that it can be directly estimated from the phenotypic data on relatives.
 
 \vspace{1pc}
 $\bullet$ broad-sense heritability:
 the broad sense heritability of a trait is defined as the proportion of the overall phenotypic variation in the trait that is attributable to genetic comonents, e.g., \\
-	$ Var(G)/Var(Y).
+
+	$ 
+		Var(G)/Var(Y) = \frac{Var(G)}{Var(Y)}.
 	$ \\
 	
 
