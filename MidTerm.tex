@@ -1,5 +1,8 @@
 \documentclass{article}
 
+\usepackage{amsmath}
+
+
 \begin{document}
 
 
@@ -589,9 +592,36 @@ the genetic model that describes the data ‘best’.
 7. Text, section 4.5, problems 1-5, 11 and 12.
 
 
+	\texttt{Answer Problem 2 (a) of chapter 4} \\ \\
+	$
+		Cov(Y_1, Y_2) 																		\\
+		= E( ( Y_1 - \mu_1) * (Y_2 - \mu_2) ) 												\\
+		= E( Y_1 * Y_2 - Y_1 * \mu_2 - Y_2*\mu_1 + \mu_1*\mu_2) 							\\
+		= E(Y_1*Y_2) - \mu_2 * E(Y_1) - \mu_1 * E(Y_2) + \mu_1 * \mu_2						\\
+		                 \text{\quad  Here: }  \quad \ E(Y_1) = \mu_1, E(Y_2) = \mu_2		\\
+		= E(Y_1 * Y_2) - \mu_1*\mu_2														\\
+		here \mu_1 and \mu_2 ~ Binomail(0, p)												\\		\\	
+		E(Y_1 * Y_2) = \sum_{y_1}^{}\sum_{y_2}^{} y_1*y_2*P(Y_1, Y_2) 						\\
+		= P(Y_1 = 1, Y_2 = 1) - \sum_{y_1}^{max}y_1*P(Y_1) * \sum_{y_2}{}y_2*P(Y_2)			\\
+					Only \quad when \quad y_1 = 1 \quad or \quad y_2 = 1 \quad could \quad count		\\			\\
+		= P(Y_1 = 1, Y_2 = 1) - P(Y_1)P(Y_2)												\\
+		= P(Y_1 = Y_2 = 1) - K^2	
+	$	
+		\\ \\
+		
+	\texttt{Answer Problem 2 (b) of chapter 4} \\
+	$
+		\lambda_R = \frac{P(Y_2=1 | Y_1 = 1)}{K} 				\\
+		\text{Here we plug in 2 (a)}							\\
+		P(Y_1 =1 | Y_2 = 1) * P(Y_2 = 1) = P(Y_1=1, Y_2=1)		\\ \\
+		\lambda_R = \frac{P(Y_2=1, Y_1=1)}{P(Y_1=1) * K}		\\
+		\lambda_R = \frac{P(Y_2=1, Y_1=1)}{K^2}					\\
+		\lambda_R = \frac{Cov(Y_1, Y_2) + K^2}{K^2}				\\
+	$
 
 
 
 
 
 \end{document}
+
