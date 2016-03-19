@@ -1,0 +1,172 @@
+\documentclass{article}
+
+\usepackage{hyperref}
+
+\begin{document}
+
+
+
+\centerline{\sc \large CompSci 590 HW2}
+\vspace{1pc}
+\centerline{\sc Molecular Assembly and Computation }
+\vspace{1pc}
+
+\centerline{\it (Question one through Question seven)}
+
+\vspace{1pc}
+\centerline{\sc  Guangjian (Jeff) Du}
+\vspace{2pc}
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % %% % % % % % % % % % % % % % % % % % % %
+% % % % % % % % % % % % % % % % % % % % % % % % % % %% % % % % % % % % % % % % % % % % % % %
+% % % % % % % % % % % % % % % % % % % % % % % % % % %% % % % % % % % % % % % % % % % % % % %
+
+\centerline{\sc Problem 1: Enzyme-based DNA Computing}
+\vspace{0.2in}
+
+Design a set of enzyme-based DNA logic gates (AND gate and OR gate) with emphasis on: 
+
+$\bullet$ (a) leak reduction, explain how you aim to design your gates to be leakless \\
+Answer: \textit{leak}: incorrect signal production.
+
+\vspace{0.1in}
+$\bullet$ (b) scalability which means that the gates should be able to work together as a circuit. 
+You are allowed to use any enzyme.\\
+
+
+Cite: 1 Design of enzyme-interfaced DNA logic operations (AND, OR and INHIBIT) with an assaying application for single-base mismatch \\
+	  2 Leakless DNA Strand Displacement Systems Fig 4 and Fig 5
+
+
+
+
+
+
+
+
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % %% % % % % % % % % % % % % % % % % % % %
+% % % % % % % % % % % % % % % % % % % % % % % % % % %% % % % % % % % % % % % % % % % % % % %
+% % % % % % % % % % % % % % % % % % % % % % % % % % %% % % % % % % % % % % % % % % % % % % %
+\newpage
+\centerline{\sc Problem 2: Enzyme-based DNA Computing}
+\vspace{0.2in}
+$\bullet$ (2a) Using class materials as well as literature search, find two different deoxyribozymes (DNAzymes) and describe in detail their properties. Using the DNAzymes you have chosen, construct a half-adder and a full-adder. Please cite all sources you have used to answer this question.\\
+
+cite: \url{http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.87.1221&rep=rep1&type=pdf}
+	  
+	
+$\bullet$ (2b) Using class materials as well as literature search, construct hairpin-based OR, AND, and XOR gates. Describe an implementation of ripple-carry adder with the gates you have answered from the previous part. Please cite all sources you have used to answer this question.
+
+
+
+
+
+
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % %% % % % % % % % % % % % % % % % % % % %
+% % % % % % % % % % % % % % % % % % % % % % % % % % %% % % % % % % % % % % % % % % % % % % %
+% % % % % % % % % % % % % % % % % % % % % % % % % % %% % % % % % % % % % % % % % % % % % % %
+\newpage
+\centerline{\sc Problem 3:  Hybridization-based DNA Computing}
+\vspace{0.2in}
+$\bullet$ (3a) Read the article: \url{ http://science.sciencemag.org/content/332/6034/1196 and write a paragraph of summary.\\ }
+
+
+$\bullet$ (3b) Design a DNA digital circuit to compute square roots for 2-bit numbers using seesaw gates. \\
+
+
+$\bullet$ (3c) Simulate your circuit using LBS (Language for Biological Systems) in Visual GEC: \\
+
+LBS (Language for Biological Systems): see  
+	\url{ http://homepages.inf.ed.ac.uk/gdp/publications/Lang_Bio_Sys_Design_Spec.pdf }
+	
+	Visual GEC: see \url{ http://lepton.research.microsoft.com/webgec/ }
+
+
+
+
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % %% % % % % % % % % % % % % % % % % % % %
+% % % % % % % % % % % % % % % % % % % % % % % % % % %% % % % % % % % % % % % % % % % % % % %
+% % % % % % % % % % % % % % % % % % % % % % % % % % %% % % % % % % % % % % % % % % % % % % %
+\newpage
+\centerline{\sc Problem 4:   (DNA-based Molecular Robotics)}
+\vspace{0.2in}
+$\bullet$ (4a) Every robotics system requires fuel to function. List the different types of fuel used currently in DNA robotic reactions and mention at least 3 examples (with references) for each. \\
+
+$\bullet$(4b) What role does concentration play in fueling robotic motion? Explain this for each of the different types of fuel.  \\
+
+$\bullet$(4c) List 3 different ways of observing/reporting/confirming robotic motion (fluorescence, imaging, gel) and provide 3 examples (with references) on each.  \\
+
+$\bullet$(4d) Summarize an example DNAzyne-based or hybridization based robotics demonstration from 2014 onwards, and argue why you consider it to be so.
+
+
+
+
+
+
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % %% % % % % % % % % % % % % % % % % % % %
+% % % % % % % % % % % % % % % % % % % % % % % % % % %% % % % % % % % % % % % % % % % % % % %
+% % % % % % % % % % % % % % % % % % % % % % % % % % %% % % % % % % % % % % % % % % % % % % %
+\newpage
+\centerline{\sc Problem 5:  Enzyme based DNA Robotics:}
+\vspace{0.2in}
+DNA Robotics is the study of designing DNA systems that can perform conformational changes/ display locomotion. In order to perform any change, energy is required. Let us take the example of a DNA walker - 
+"A Unidirectional DNA Walker That Moves Autonomously along a Track"
+(See \url{ https://users.cs.duke.edu/~reif/paper/harish/NanoRobotics/NanoRobotics.pdf } for an easier explanation of the article).
+
+
+$\bullet$ (5a) What is the source of energy for this locomotion. Give the chemical reaction that is involved in this system that releases energy.\\
+
+$\bullet$ (5b) Is this reaction reversible, i.e. can the walker move in the reverse direction?\\
+
+
+$\bullet$ (5c) List all the enzymes involved in this particular walker, and the DNA recognition sequences that they cut. \\
+
+$\bullet$ (5d) Currently this design is limited to 2 steps. Can this design be extended to 4 steps. If so, how? Will you need more enzymes?\\
+
+
+
+
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % %% % % % % % % % % % % % % % % % % % % %
+% % % % % % % % % % % % % % % % % % % % % % % % % % %% % % % % % % % % % % % % % % % % % % %
+% % % % % % % % % % % % % % % % % % % % % % % % % % %% % % % % % % % % % % % % % % % % % % %
+\newpage
+\centerline{\sc Problem 6:    DNAZyme based DNA Robotics:}
+\vspace{0.2in}
+
+
+$\bullet$ (6a) Read the article. Molecular robots guided by prescriptive landscapes. \\
+
+$\bullet$ (6b) What is the difference between a DNAzyme and an enzyme. In one sentence. \\
+
+$\bullet$ (6c) What is the source of energy for this locomotion. Give the chemical reaction that is involved in this system that releases energy. \\
+
+$\bullet$ (6d) What type of molecule is cleaved by the DNAzyme?\\
+
+
+
+
+
+
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % %% % % % % % % % % % % % % % % % % % % %
+% % % % % % % % % % % % % % % % % % % % % % % % % % %% % % % % % % % % % % % % % % % % % % %
+% % % % % % % % % % % % % % % % % % % % % % % % % % %% % % % % % % % % % % % % % % % % % % %
+\newpage
+\centerline{\sc Problem 7:  DNA-based Molecular Robotics Design}
+\vspace{0.2in}
+
+
+$\bullet$ Design an arbitrary track, and a simple DNAzyme-based or hybridization-based DNA robotic system which can move along that track. You can use any sort of track. Submit the design to a simulation software (using NUPACK or canDo, for example, or both) with a simulation of two or more steps of locomotion, and provide the results of the simulation .
+
+
+
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % %% % % % % % % % % % % % % % % % % % % %
+% % % % % % % % % % % % % % % % % % % % % % % % % % %% % % % % % % % % % % % % % % % % % % %
+% % % % % % % % % % % % % % % % % % % % % % % % % % %% % % % % % % % % % % % % % % % % % % %
+\end{document}
