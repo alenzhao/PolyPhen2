@@ -1,6 +1,7 @@
 \documentclass{article}
 
 \usepackage{hyperref}
+\usepackage{graphicx}
 
 \begin{document}
 
@@ -27,7 +28,27 @@
 Design a set of enzyme-based DNA logic gates (AND gate and OR gate) with emphasis on: 
 
 $\bullet$ (a) leak reduction, explain how you aim to design your gates to be leakless \\
-Answer: \textit{leak}: incorrect signal production.
+\textbf{Answer:} \\
+\textbf{OR gate}:
+An OR is a gate with two inputs and one output. It sets the output to “1“ when there is a
+binary “1” in at least one of its inputs. Its true table is as follows:\\
+  	\includegraphics{ORgate.png} \\
+\centerline{\textit{An example of OR gate} }\\
+
+\textbf{AND gate}:
+An AND gate is a two input gate that only sets the output to “1“ when both inputs are “1“.
+The true table of this device is: \\
+  	\includegraphics{ANDgate.png} \\
+\centerline{\textit{An example of AND gate} }\\
+% introduce LEAK concept
+\textbf{LEAK:} incorrect signal production.
+\newline
+\includegraphics{Andgatefigure.png} \\
+\centerline{\textit{An implementation of X := AND(A, B) using double-long domain motif}} \\
+
+
+
+
 
 \vspace{0.1in}
 $\bullet$ (b) scalability which means that the gates should be able to work together as a circuit. 
@@ -36,6 +57,8 @@ You are allowed to use any enzyme.\\
 
 Cite: 1 Design of enzyme-interfaced DNA logic operations (AND, OR and INHIBIT) with an assaying application for single-base mismatch \\
 	  2 Leakless DNA Strand Displacement Systems Fig 4 and Fig 5
+	  3 Genetic Logic Gates and Flipping DNA, \url{http://www.nature.com/scitable/blog/bio2.0/genetic_logic_gates_and_flipping}
+	  4 A simple DNA gate motif for synthesizing large-scale circuits
 
 
 
@@ -53,10 +76,20 @@ Cite: 1 Design of enzyme-interfaced DNA logic operations (AND, OR and INHIBIT) w
 \vspace{0.2in}
 $\bullet$ (2a) Using class materials as well as literature search, find two different deoxyribozymes (DNAzymes) and describe in detail their properties. Using the DNAzymes you have chosen, construct a half-adder and a full-adder. Please cite all sources you have used to answer this question.\\
 
-cite: \url{http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.87.1221&rep=rep1&type=pdf}
-	  
+cite: \url{http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.87.1221&rep=rep1&type=pdf}\\
+
+\textbf{Answer:} \\
+\textbf{Half-adder:} A half adder gives an output consisting of two bits. One of them is the binary addition of the two inputs, in other words, the result of a XOR operation between the two bits. The other
+bit is the carry which can be implemented as the AND operation over the two inputs. \\
+	\includegraphics{XORgate.png} \\
+\centerline{\textit{An example of XOR gate} }\\
+
 	
-$\bullet$ (2b) Using class materials as well as literature search, construct hairpin-based OR, AND, and XOR gates. Describe an implementation of ripple-carry adder with the gates you have answered from the previous part. Please cite all sources you have used to answer this question.
+$\bullet$ (2b) Using class materials as well as literature search, construct hairpin-based OR, AND, and XOR gates. Describe an implementation of ripple-carry adder with the gates you have answered from the previous part. Please cite all sources you have used to answer this question. \\
+
+\textbf{Answer:} \\
+\textbf{Ripple Carry Adder:} A ripple carry adder is a digital circuit that produces the arithmetic sum of two binary numbers. It. can be constructed with full adders connected in cascaded (see section 2.1), with the carry output. from each full adder connected to the carry input of the next full adder in the chain. \\
+
 
 
 
@@ -70,7 +103,7 @@ $\bullet$ (2b) Using class materials as well as literature search, construct hai
 \newpage
 \centerline{\sc Problem 3:  Hybridization-based DNA Computing}
 \vspace{0.2in}
-$\bullet$ (3a) Read the article: \url{ http://science.sciencemag.org/content/332/6034/1196 and write a paragraph of summary.\\ }
+$\bullet$ (3a) Read the article: \url{ http://science.sciencemag.org/content/332/6034/1196} and write a paragraph of summary.\\ 
 
 
 $\bullet$ (3b) Design a DNA digital circuit to compute square roots for 2-bit numbers using seesaw gates. \\
